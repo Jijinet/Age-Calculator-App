@@ -33,10 +33,10 @@ Users should be able to see hover states for interactive elements.
 
 ### Links
 
-- Frontend Mentor solution url: https://www.frontendmentor.io/solutions/faq-accordion-card-using-html-css-and-javascript-wIx7wdrTUw
-- Live Site URL: https://jijinet.github.io/FAQ-accordion-card/
-- Google Mobile Friendly Test: https://search.google.com/test/mobile-friendly/result?id=eC1v82jhjx8C__ew5Cp7HQ
-- GitHub repo : https://github.com/Jijinet/FAQ-accordion-card
+- Frontend Mentor solution url:https://www.frontendmentor.io/solutions/age-calculator-app-using-html-css-javascript-EtVN-_VBWT
+- Live Site URL: https://jijinet.github.io/Age-Calculator-App/
+- Google Mobile Friendly Test: https://search.google.com/test/mobile-friendly/result?id=M25U_sEb8tnZf8RV6smL2Q
+- GitHub repo : https://github.com/Jijinet/Age-Calculator-App
 
 ## My process
 
