@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-ExtraBoldItalic";
+  src: url("../fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: bolder;
+  font-style: italic;
+}
+
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+
+  --poppins-regular: "Poppins-Regular";
+  --poppins-bold: "Poppins-Bold";
+  --poppins-bolder: "Poppins-ExtraBoldItalic";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--off-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  min-height: 400px;
+  width: 680px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 20px 20px 200px 20px;
+  position: relative;
+}
+
+.input-container {
+  height: 120px;
+  width: 95%;
+  border-bottom: solid var(--off-white) 2px;
+  padding-bottom: 20px;
+}
+.input-container form {
+  display: flex;
+  width: 85%;
+}
+.input-container form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input {
+  font-size: 32px;
+  width: 65%;
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+  padding: 5px 15px;
+  color: var(--off-black);
+  font-family: var(--poppins-bold);
+  font-weight: 700;
+}
+input:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+input::placeholder {
+  font-family: var(--poppins-bold);
+}
+
+label {
+  padding-bottom: 8px;
+  font-family: var(--poppins-regular);
+  font-weight: 700;
+  color: var(--smokey-grey);
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.output-container {
+  padding-top: 30px;
+  line-height: 100px;
+}
+
+h1 {
+  font-family: var(--poppins-bolder);
+  font-weight: 800;
+  font-size: 90px;
+  color: var(--off-black);
+}
+
+span {
+  color: var(--purple);
+  margin-right: 10px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.img-container {
+  position: absolute;
+  background-color: var(--purple);
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 50%;
+  left: 82%;
+  bottom: 50%;
+  top: 26%;
+  cursor: pointer;
+}
+
+.img-container:hover {
+  background-color: var(--off-black);
+}
+
+p {
+  font-family: var(--poppins-regular);
+  font-size: 13px;
+  color: var(--light-red);
+  font-weight: 400;
+  display: inline-block;
+  visibility: hidden;
+  padding-top: 5px;
+}
+
+p.error {
+  visibility: visible;
+}
+
+label.error {
+  color: var(--light-red);
+}
+
+input.error {
+  border-color: var(--light-red);
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px 20px 100px 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-container {
+    height: 120px;
+    width: 95%;
+    border-bottom: solid var(--off-white) 2px;
+    padding-bottom: 30px;
+  }
+  .output-container {
+    padding-top: 50px;
+    line-height: 60px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+
+  .img-container {
+    position: absolute;
+    background-color: var(--purple);
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 50%;
+    left: 45%;
+    bottom: 50%;
+    top: 32%;
+    cursor: pointer;
+  }
+  .img {
+    height: 30px;
+    width: 30px;
+  }
+  input {
+    font-size: 18px;
+    width: 55%;
+    border-radius: 5px;
+    border: 1px solid var(--light-grey);
+    padding: 5px 15px;
+    color: var(--off-black);
+    font-family: var(--poppins-bold);
+    font-weight: 700;
+  }
+  .input-container form {
+    display: flex;
+    width: 100%;
+  }
+  .input-container form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  p {
+    font-family: var(--poppins-regular);
+    font-size: 11px;
+    color: var(--light-red);
+    font-weight: 400;
+    display: inline-block;
+    visibility: hidden;
+    padding-top: 5px;
+  }
+}
